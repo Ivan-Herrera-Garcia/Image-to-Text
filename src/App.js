@@ -3,6 +3,8 @@ import Webcam from 'react-webcam';
 import Tesseract from 'tesseract.js';
 import { Button, Segment, Header, Icon, Input } from 'semantic-ui-react';
 
+//Esto es un comentario en visual studio code
+
 const App = () => {
   const webcamRef = useRef(null);
   const [imageData, setImageData] = useState(null);
@@ -90,20 +92,6 @@ const App = () => {
           <Button negative onClick={() => limpiar()}>Limpiar</Button>
         </div>
       </div>
-
-      {/* <h1>Aplicación de OCR con Tesseract.js en React</h1>
-      <input type="file" accept="image/*" onChange={handleFileChange} />
-      <button onClick={handleOCR}>Realizar OCR</button>
-      {imageData && <img src={imageData} alt="Imagen seleccionada" style={{ maxWidth: '300px' }} />} */}
-
-      {/* <Webcam ref={webcamRef} />
-      <button onClick={capture}>Capturar imagen</button>
-      {
-        imageData && 
-          <img src={imageData} alt="Imagen capturada" />
-      }
-       <button onClick={recognizeText}>Extraer texto</button>
-      {extractedText && <p>Texto extraído: {extractedText}</p>} */}
     </div>
   );
 };
